@@ -203,7 +203,7 @@ img {
   background-color: var(--hero-footer-color);
 }
 .hero {
-  width: 1600px;
+  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 200px;
@@ -330,20 +330,23 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: var(--second-accent-color);
-  color: var(--second-accent-color);
+  color: var(--first-accent-color);
 }
 .social-icon-link:hover .social-svg-icon,
 .social-icon-link:focus .social-svg-icon {
   fill: currentColor;
 }
+
 .social-svg-icon {
   width: 20px;
   height: 20px;
   fill: var(--icon-cl);
 }
 
-.social-icon-link:hover {
+.social-icon-link:hover,
+.social-icon-link:focus {
   background-color: var(--first-accent-color);
+  color: var(--second-accent-color);
 }
 
 .position {
