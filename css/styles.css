@@ -13,8 +13,8 @@
   --icon-cl: #afb1b8;
   --join-link-cl: rgba(255, 255, 255, 0.1);
 
-  --main-font: "Roboto", sans-serif;
-  --logo-font: "Raleway", sans-serif;
+  --main-font: 'Roboto', sans-serif;
+  --logo-font: 'Raleway', sans-serif;
 }
 
 html {
@@ -125,29 +125,35 @@ img {
   margin-right: 50px;
 }
 /* не  получается выровнять иконки  */
-.contacts-link {
+
+.contacts-item {
   display: flex;
   align-items: center;
 }
-/* .contacts-item {
-  display: flex;
-  align-items: center;
-} */
 .nav {
   margin-left: 93px;
 }
 .contacts {
   margin-left: auto;
 }
-.site-nav .link,
-.contacts .link {
+.site-nav .link {
   display: block;
 
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.contacts-link {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
 .contacts-icon {
+  margin-right: 10px;
   fill: currentColor;
 }
 
@@ -208,7 +214,7 @@ img {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/background.jpeg");
+    url('../images/background.jpeg');
   background-repeat: no-repeat;
 }
 .hero-title {
